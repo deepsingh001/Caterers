@@ -1,0 +1,560 @@
+﻿@{
+    ViewData["Title"] = "About Us | Heritage Caterers";
+}
+
+<!-- Font Awesome (Add this in your layout if not already present) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Existing styles plus additional */
+    .about-hero {
+        height: 60vh;
+        background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1555243896-c709bfa0b564?auto=format&fit=crop&w=1920');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+        .about-hero h1 {
+            font-size: 65px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    .owner-section {
+        padding: 80px 0;
+    }
+
+    .owner-img {
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .team-card {
+        transition: .3s;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(74,4,4,.2);
+        }
+
+        .team-card img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+    .stats-section {
+        background: #4A0404;
+        color: white;
+        padding: 70px 0;
+        text-align: center;
+    }
+
+        .stats-section h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        .stats-section p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+    /* Excellence Cards */
+    .excellence-card {
+        padding: 40px 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 5px 20px rgba(0,0,0,.05);
+        background: white;
+        height: 100%;
+        border-radius: 15px;
+        transition: .3s;
+    }
+
+        .excellence-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(74,4,4,.15);
+        }
+
+        .excellence-card i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .excellence-card h4 {
+            color: #4A0404;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .excellence-card p {
+            color: #666;
+            margin: 0;
+        }
+
+    /* Special Section */
+    .special-section {
+        padding: 60px 0;
+    }
+
+    .special-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .special-list li {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .special-list i {
+            color: #4A0404;
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+    .special-img {
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    }
+
+    /* Mission Section */
+    .mission-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+        padding: 80px 0;
+    }
+
+    .mission-box {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        height: 100%;
+    }
+
+        .mission-box h3 {
+            color: #4A0404;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+    /* Values Section */
+    .value-item {
+        text-align: center;
+        padding: 30px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,.05);
+        transition: .3s;
+        height: 100%;
+    }
+
+        .value-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(74,4,4,.15);
+        }
+
+    .value-icon {
+        width: 80px;
+        height: 80px;
+        background: #4A0404;
+        color: #FFD700;
+        font-size: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+
+    /* Testimonial Card (Optional) */
+    .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,.05);
+        margin: 10px;
+    }
+
+        .testimonial-card i {
+            color: #FFD700;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+    .testimonial-footer {
+        display: flex;
+        align-items: center;
+    }
+
+        .testimonial-footer i {
+            font-size: 40px;
+            margin-right: 15px;
+            color: #4A0404;
+        }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .about-hero h1 {
+            font-size: 45px;
+        }
+
+        .owner-img {
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 35px;
+        }
+
+        .stats-section h2 {
+            font-size: 36px;
+        }
+    }
+</style>
+
+<!-- HERO SECTION -->
+<section class="about-hero">
+    <div>
+        <h1>About Our Catering</h1>
+        <p class="lead">Traditional Taste • Royal Presentation • Wedding Specialists</p>
+    </div>
+</section>
+
+<!-- FOUNDER/OWNER SECTION -->
+<section class="owner-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=800"
+                     class="img-fluid owner-img shadow">
+            </div>
+            <div class="col-lg-7">
+                <h2 class="mb-3">Meet Our Founder</h2>
+                <h4 class="text-muted mb-4">Master Halwai - Bhagwati Pal</h4>
+                <p class="lead mb-4">
+                    Rajesh Halwai started this catering service with a passion
+                    for traditional Indian cooking and wedding feasts.
+                </p>
+                <p class="mb-3">
+                    With more than <strong>25 years of experience</strong> in catering,
+                    he has served thousands of weddings and events across Rajasthan,
+                    Punjab, and Delhi NCR.
+                </p>
+                <p class="mb-3">
+                    His dedication to authentic taste, hygiene, and premium
+                    quality has made our catering service one of the most
+                    trusted names in wedding catering. What started as a small
+                    family kitchen in Jaipur is now a full-fledged catering service
+                    with a team of 75+ professionals.
+                </p>
+                <p>
+                    Today he leads a professional team of chefs, helpers,
+                    and serving staff to deliver unforgettable food
+                    experiences at weddings and events.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MISSION & VISION SECTION (New Addition) -->
+<section class="mission-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="mission-box">
+                    <i class="fas fa-bullseye fa-3x mb-3" style="color: #4A0404;"></i>
+                    <h3>Our Mission</h3>
+                    <p class="text-muted">To preserve and promote the rich culinary heritage of Rajasthan and Punjab through authentic wedding catering, while maintaining the highest standards of hygiene and quality.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-box">
+                    <i class="fas fa-eye fa-3x mb-3" style="color: #4A0404;"></i>
+                    <h3>Our Vision</h3>
+                    <p class="text-muted">To become India's most trusted wedding catering brand, known for royal presentation, authentic taste, and exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="container py-5">
+    <h2 class="section-title">Our Catering Team</h2>
+    <p class="text-center text-muted mb-5">Meet the experts behind your wedding feast</p>
+
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="card team-card text-center">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800"
+                     class="card-img-top">
+                <div class="card-body">
+                    <h5>Chef Ramesh</h5>
+                    <p class="text-muted">Senior Chef (20 years exp.)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card team-card text-center">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800"
+                     class="card-img-top">
+                <div class="card-body">
+                    <h5>Chef Mohit</h5>
+                    <p class="text-muted">Junior Chef (8 years exp.)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card team-card text-center">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800"
+                     class="card-img-top">
+                <div class="card-body">
+                    <h5>Chef Vijay</h5>
+                    <p class="text-muted">Sweet Specialist (15 years)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card team-card text-center">
+                <img src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e?auto=format&fit=crop&w=800"
+                     class="card-img-top">
+                <div class="card-body">
+                    <h5>Chef Suresh</h5>
+                    <p class="text-muted">Kitchen Manager (12 years)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PILLARS OF EXCELLENCE -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">Our Pillars of Excellence</h2>
+        <p class="text-muted mb-5">What makes us different from others</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="excellence-card">
+                    <i class="fas fa-certificate text-warning"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Hum sirf premium grade ingredients aur hand-ground masale use karte hain. No compromise on quality.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="excellence-card">
+                    <i class="fas fa-hands-wash text-info"></i>
+                    <h4>Strict Hygiene</h4>
+                    <p>Humare staff ke liye gloves, headgear aur regular health checkups mandatory hain. Fully sanitized kitchen.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="excellence-card">
+                    <i class="fas fa-heart text-danger"></i>
+                    <h4>Home-like Taste</h4>
+                    <p>Modern presentation ke sath vahi purana "Ghar jaisa swaad" jo sabko yaad rahe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT MAKES US SPECIAL -->
+<section class="special-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4" style="color: #4A0404; font-weight: 700;">What Makes Us Special?</h2>
+                <ul class="special-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Specialized in Marwari & Punjabi Cuisines</strong> - Authentic recipes passed down through generations
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Live Jalebi and Imarti Counters</strong> - Made fresh by specialist halwais at your event
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Custom Menu Planning</strong> - We design menus according to your budget and preferences
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Professional Serving Staff</strong> - Trained staff in ethnic uniforms for royal presentation
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Traditional Cooking Methods</strong> - Hand-ground masalas, tandoor cooking, copper utensils
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800"
+                     class="img-fluid special-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR VALUES (New Section) -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="text-center text-muted mb-5">The principles that guide our service</p>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h5>Passion</h5>
+                    <p class="text-muted">Love for cooking since 1998</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Integrity</h5>
+                    <p class="text-muted">Honest pricing, no hidden costs</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h5>Punctuality</h5>
+                    <p class="text-muted">On-time delivery guaranteed</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h5>Customer First</h5>
+                    <p class="text-muted">Your happiness is our success</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENT TESTIMONIALS (Optional - Recommended) -->
+<section class="container py-5">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="text-center text-muted mb-5">Hear from couples who trusted us with their wedding</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Bahut hi shandaar khana tha. Sab guests ne tareef ki. Live jalebi counter toh zabardast tha! Pure Marwari style ka khana."</p>
+                <div class="testimonial-footer">
+                    <i class="fas fa-user-circle"></i>
+                    <div>
+                        <h6 class="mb-0">Mr. Suresh Agarwal</h6>
+                        <small class="text-muted">Wedding, Jaipur • March 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Rajesh ji ne personally menu plan kiya aur sab kuch perfect tha. Punjabi cuisine ekdum authentic. Highly recommended!"</p>
+                <div class="testimonial-footer">
+                    <i class="fas fa-user-circle"></i>
+                    <div>
+                        <h6 class="mb-0">Mrs. Priya Singh</h6>
+                        <small class="text-muted">Reception, Delhi • Dec 2023</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Hygiene aur quality dono top class. Staff bahut professional tha. 500 guests ke liye perfect execution."</p>
+                <div class="testimonial-footer">
+                    <i class="fas fa-user-circle"></i>
+                    <div>
+                        <h6 class="mb-0">Mr. Rakesh Gupta</h6>
+                        <small class="text-muted">Engagement, Gurgaon • Feb 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATISTICS SECTION -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>3500+</h2>
+                <p>Events Catered</p>
+            </div>
+            <div class="col-md-3">
+                <h2>75+</h2>
+                <p>Team Members</p>
+            </div>
+            <div class="col-md-3">
+                <h2>50+</h2>
+                <p>Signature Dishes</p>
+            </div>
+            <div class="col-md-3">
+                <h2>25+</h2>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION (New Section) -->
+<section class="py-5">
+    <div class="container text-center">
+        <h3 style="color: #4A0404; font-weight: 700;">Ready to Plan Your Wedding Feast?</h3>
+        <p class="lead mb-4">Let's create a memorable menu for your special day</p>
+        <a href="#" class="btn btn-lg" style="background: #4A0404; color: #FFD700; padding: 15px 50px; border-radius: 50px; font-weight: 600;">
+            <i class="fas fa-phone-alt me-2"></i>Contact Us Today
+        </a>
+    </div>
+</section>
+

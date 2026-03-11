@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FoodMahal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --royal-red: #8B0000;
+            --gold: #D4AF37;
+            --dark-gold: #B8860B;
+            --deep-black: #1A1A1A;
+            --cream: #FFFBF2;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fff;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* STICKY NAVBAR LOGIC */
+        .navbar {
+            transition: all 0.4s ease-in-out;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: transparent;
+        }
+
+            .navbar.scrolled {
+                background: var(--royal-red);
+                padding: 10px 0;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            }
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: 700;
+            color: white !important;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin-left: 25px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+            .nav-link:hover {
+                color: var(--gold) !important;
+            }
+
+        footer {
+            background: var(--deep-black);
+            color: var(--gold);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 3px solid var(--gold);
+        }
+
+        body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span style="color: var(--gold)">⚜</span> Bhagwati Caterers
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" style="border-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Home/AboutUs">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dishes">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Booking</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2026 FoodMahal Wedding Catering | Crafting Royal Flavors</p>
+        </div>
+    </footer>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
