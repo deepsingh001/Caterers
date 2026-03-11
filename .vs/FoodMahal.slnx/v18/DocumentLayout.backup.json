@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\deep work\\MyWork\\FoodMahal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC18074D-33B0-4FA6-B8E4-936B5EC2F67E}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|d:\\deep work\\mywork\\foodmahal\\foodmahal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7761A78-393C-AEC6-163D-7B8AAFCA03CF}|FoodMahal\\FoodMahal.csproj|solutionrelative:foodmahal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,10 +64,9 @@
               "RelativeDocumentMoniker": "FoodMahal\\Views\\Home\\AboutUs.cshtml",
               "ToolTip": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Views\\Home\\AboutUs.cshtml",
               "RelativeToolTip": "FoodMahal\\Views\\Home\\AboutUs.cshtml",
-              "ViewState": "AgIAABUBAAAAAAAAAAAQwCQBAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACECAAAAAAAAAADwvzACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-11T11:15:42.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T11:15:42.699Z"
             },
             {
               "$type": "Document",
@@ -77,36 +76,34 @@
               "RelativeDocumentMoniker": "FoodMahal\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "FoodMahal\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEkAAAAAAAAAAADwv1kAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv3IAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-11T08:58:13.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "FoodMahal\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "FoodMahal\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAIUAAAAAAAAAAADwv5wAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv4gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-11T08:57:25.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T08:57:25.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FoodMahal\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "FoodMahal\\Controllers\\HomeController.cs*",
+              "ToolTip": "D:\\deep work\\MyWork\\FoodMahal\\FoodMahal\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FoodMahal\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T08:57:21.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T08:57:21.031Z"
             }
           ]
         }
