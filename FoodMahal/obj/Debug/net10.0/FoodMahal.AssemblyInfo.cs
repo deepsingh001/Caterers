@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodMahal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19e91df9b58145f0b706586413c53903fcbcb6b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cd1a52129e4f5cd6e3c26e28c64f2a639623e4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodMahal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodMahal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

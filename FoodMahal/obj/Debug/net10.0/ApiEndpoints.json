@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ContainingType": "FoodMahal.ApiController.PriceController",
+    "Method": "GetPrices",
+    "RelativePath": "api/Price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FoodMahal.ApiController.PriceController",
+    "Method": "RunScraper",
+    "RelativePath": "api/Price/run",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
